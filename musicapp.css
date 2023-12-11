@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:26rem;
+    width:20rem;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(255, 0, 0, 0.831));
+    text-align: center;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.732);
+}
+.box  span{
+    color:#ff004f;
+}
+.box h2{
+    padding:0.4rem;
+    color:white;
+    font-size: 2rem;
+   font-weight: bolder;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+i{
+    cursor:pointer;
+}
+.box p{
+    padding:0.2rem;
+    color:white;
+    font-size: 1.5rem;
+   font-weight: bolder;
+   letter-spacing: 2px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+.image{
+    height:8rem;
+    width:8rem;
+    margin: auto;
+    margin-top: 1rem;
+    /* border: 2px solid #ff004f; */
+   
+}
+.image img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #ff004f;
+    box-shadow: 1rem 1rem 3.2rem  rgba(0, 0, 0, 0.532), -1rem -1rem 3.2rem  rgba(0, 0, 0, 0.532);
+}.icons{
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:2rem;
+}
+
+#icon2{
+    width:3.2rem;
+    height:3.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+#icon2:hover{
+    background-color: black;
+    color:white;
+    border:2px solid black;
+}
+.anime{
+    animation:rotate 18s linear infinite ;
+
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:  rotate(3600deg);
+    }
+}
+/* progres stylee */
+.progrees{
+    width:100%;
+    height:auto;
+    padding:1rem;
+}
+.progressdiv{
+    width:100%;
+    background-color: aquamarine;
+    border-radius: 5rem;
+    position: relative;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.532),0 2rem 3rem rgba(0, 0, 0, 0.532),0 3rem 4rem rgba(0, 0, 0, 0.632),0 3rem 7rem rgba(0, 0, 0, 0.732);
+    cursor: pointer;
+    height:0.3rem;
+    transition:all 0.5s linear;
+    appearance: none;
+
+}
+.progresspart{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0%;
+    background-color: blue;
+    border-radius: 5rem;
+    cursor: pointer;
+    height:0.3rem;
+    transition:all 0.1s linear;
+    appearance: none;
+}
+.progresmeter{
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
